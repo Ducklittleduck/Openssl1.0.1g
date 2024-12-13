@@ -60,9 +60,9 @@ jobs:
     # 在初始化 CodeQL 之前，运行配置脚本
     - name: Run Configure Script
       run: |
-        make clean
         chmod +x ./config  # 确保 configure 脚本具有可执行权限
         ./config           # 运行 configure 脚本来配置构建环境
+        make clean
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
